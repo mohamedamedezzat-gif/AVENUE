@@ -1,0 +1,453 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+
+body { 
+    margin: 0; 
+    background-color: #F8F7F3; 
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+a { 
+    text-decoration: none; 
+    margin: 10px;  
+    color: white; 
+    transition: 0.3s; 
+} 
+
+a:hover { 
+    opacity: 0.8;
+} 
+
+button { 
+    background-color: #111827; 
+    color: white; 
+    padding: 5px 20px; 
+    border-radius: 5px; 
+    transition: 0.3s; 
+    margin: 3px; 
+    cursor: pointer;
+} 
+
+button:hover { 
+    background-color: #E5B93D; 
+} 
+
+.navbar { 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #111827; 
+    display: flex; 
+    text-align: center; 
+    gap: 20px; 
+    padding: 10px; 
+    color: white; 
+    justify-content: space-around; 
+} 
+
+.logo { 
+    color: gold; 
+} 
+
+nav { 
+    display: flex; 
+} 
+
+.hero {
+    font-weight: bold;
+    color: black;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 55%;
+}
+
+.hero h1 {
+    margin: 0 0 15px;
+    font-size: 45px;
+    text-align: left;
+}
+
+.hero p {
+    margin: 0 0 20px 0;
+    max-width: 550px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.hero img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-top: 0;
+}
+
+
+.quick-access,
+.featuredstores,
+.mall-service,
+.cta,
+.restaurants-list,
+.offers-list,
+.events-list,
+.stores-hero,
+.explore,.hero-map
+, .hero-contact,.hero-restaurants,
+.cinema { 
+    font-weight: bold; 
+    text-align: center; 
+    margin: 18px;
+} 
+
+
+.explore img { 
+    width: 30%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 17px; 
+} 
+
+.cards { 
+    display: flex; 
+    justify-content: center; 
+    gap: 25px; 
+    margin: 15px; 
+} 
+
+.card { 
+    width: 280px; 
+    padding: 20px; 
+    text-align: center; 
+    border-radius: 15px; 
+    background-color: white; 
+    transition: 0.33s; 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); 
+} 
+
+.card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 0 10px gray; 
+} 
+
+.card img { 
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+} 
+
+.card p { 
+    margin: 0; 
+    line-height: 1.5; 
+} 
+
+.card button { 
+    margin: 10px; 
+} 
+
+.contact-information { 
+    padding: 40px; 
+} 
+
+.form { 
+    width: 70%; 
+    max-width: 700px; 
+    margin: 20px auto 60px; 
+    background-color: white; 
+    padding: 35px; 
+    border-radius: 15px; 
+} 
+
+.form label { 
+    display: block; 
+    margin-bottom: 8px; 
+    font-weight: bold; 
+} 
+
+.form input, 
+.form textarea { 
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+    font-size: 16px; 
+} 
+
+.form textarea { 
+    height: 130px; 
+    resize: vertical; 
+} 
+
+.form button { 
+    background-color: #111827; 
+    color: white; 
+    border: none; 
+    padding: 13px 25px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+} 
+
+.about { 
+    text-align: center; 
+    font-weight: bold; 
+    margin: 40px auto; 
+    max-width: 900px; 
+} 
+
+.about h1 { 
+    margin-bottom: 15px; 
+    font-size: 32px; 
+} 
+
+.about p { 
+    line-height: 1.7; 
+    font-weight: normal; 
+} 
+
+.why-choose-avenue { 
+    padding: 30px 20px 60px; 
+} 
+
+.why-choose-avenue .cards { 
+    display: flex; 
+    justify-content: center; 
+    gap: 25px; 
+    flex-wrap: wrap; 
+} 
+
+.why-choose-avenue .card { 
+    width: 250px; 
+    padding: 25px; 
+    text-align: center; 
+    background-color: white; 
+    border-radius: 15px; 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); 
+    transition: 0.3s; 
+} 
+
+.why-choose-avenue .card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); 
+} 
+
+.why-choose-avenue .card h2 { 
+    margin-bottom: 12px; 
+} 
+
+.why-choose-avenue .card p { 
+    line-height: 1.5; 
+} 
+
+.fotter { 
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #111827; 
+    color: white; 
+    padding: 40px 20px; 
+    text-align: center; 
+} 
+
+.fotter h2 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.fotter p {
+    font-weight: normal;
+    color: #e5e7eb;
+    margin-bottom: 15px;
+}
+
+.fotter .links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quick-links, 
+.follow-us { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+} 
+
+.quick-links a,
+.follow-us a {
+    margin: 0;
+    color: gold;
+    font-size: 15px;
+}
+
+.contact p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.selected {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) { 
+
+    body {
+        padding: 0;
+    }
+
+    a {
+        margin: 5px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .navbar { 
+        flex-direction: column; 
+        gap: 10px; 
+        padding: 15px 10px;
+    } 
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav { 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    } 
+
+    .hero {
+        padding: 30px 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero h1 { 
+        font-size: 30px; 
+        text-align: center;
+    } 
+
+    .hero p { 
+        font-size: 14px; 
+        width: 100%;
+        text-align: center;
+    } 
+
+    .hero-content {
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero img {
+        width: 80%;
+        border-radius: 12px;
+    }
+
+    .quick-access,
+    .featured-stores,
+    .offers,
+    .events,
+    .cinema,
+    .mall-service,
+    .cta,
+    .restaurants-list,
+    .offers-list,
+    .events-list,
+    .stores-hero,
+    .explore {
+        margin: 15px 10px;
+        font-size: 14px;
+    }
+
+    .explore img {
+        width: 80%;
+    }
+
+    .cards { 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 15px;
+        margin: 10px;
+    } 
+
+    .card { 
+        width: 90%; 
+        max-width: 350px; 
+    } 
+
+    .card img { 
+        width: 100%; 
+        height: 220px; 
+    } 
+
+    .contact-information {
+        padding: 20px 10px;
+    }
+
+    .form {
+        width: 90%;
+        padding: 20px;
+        margin: 10px auto 30px;
+    }
+
+    .form input,
+    .form textarea {
+        font-size: 14px;
+    }
+
+    .about {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    .about h1 {
+        font-size: 26px;
+    }
+
+    .why-choose-avenue {
+        padding: 20px 10px;
+    }
+
+    .why-choose-avenue .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-choose-avenue .card {
+        width: 90%;
+    }
+
+    .fotter {
+        padding: 30px 15px;
+    }
+
+    .cta { 
+        padding: 20px; 
+    } 
+
+    .quick-links, 
+    .follow-us { 
+        flex-wrap: wrap; 
+        gap: 10px;
+    } 
+}
